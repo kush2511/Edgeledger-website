@@ -1,0 +1,270 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Mukta:wght@300;400;500;600&family=Mulish:wght@300;400;500;600;700&family=Nunito+Sans:wght@300;400;600;700&family=Nunito:wght@300;400;600;700;800&family=Open+Sans:wght@400;600;700&family=Poppins:wght@300;400;500;600;700&family=Public+Sans:wght@300;400;500;600&family=Raleway:wght@300;400;500;600;700&family=Rubik:wght@300;400;500;600&display=swap");
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body {
+	font-family: "Nunito Sans", sans-serif;
+	background: #fff;
+	color: #333;
+	line-height: 1.5;
+}
+
+ul {
+	list-style: none;
+}
+a {
+	color: #333;
+	text-decoration: none;
+}
+h1,
+h2 {
+	font-weight: 300;
+	line-height: 1.2;
+}
+p {
+	margin: 10px 0;
+}
+img {
+	width: 100%;
+}
+/* Nav */
+.navbar {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	background-color: #333;
+	color: #fff;
+	opacity: 0.8;
+	width: 100%;
+	height: 70px;
+	position: fixed;
+	top: 0px;
+	padding: 0 30px;
+	transition: transform 1s ease-in-out;
+}
+.navbar.top {
+	background-color: transparent;
+}
+.navbar a {
+	color: #fff;
+	padding: 10px 20px;
+	margin: 0 5px;
+}
+.navbar a:hover {
+	border-bottom: #28a745 2px solid;
+}
+.navbar ul {
+	display: flex;
+}
+.navbar .logo span {
+	font-weight: 700;
+	margin-right: 3px;
+}
+/* Header */
+.hero {
+	background: url("../images/home/showcase.jpg") no-repeat center center/cover;
+	height: 100vh;
+	position: relative;
+	color: #fff;
+}
+.hero .content {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	height: 100%;
+	padding: 0 20px;
+}
+.hero .content h1 {
+	font-family: "Rubik", sans-serif;
+	letter-spacing: 1px;
+	font-size: 50px;
+}
+.hero .content p {
+	font-family: "Nunito Sans", sans-serif;
+	font-size: 20px;
+	font-weight: lighter;
+	letter-spacing: 0.4px;
+	max-width: 600px;
+	margin: 10px 0 25px;
+}
+
+.hero::before {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(0, 0, 0, 0.5);
+	/* opacity: 0.8; */
+}
+
+.hero * {
+	z-index: 10;
+}
+.hero.blog {
+	background: url("../images/home/blog.jpg") no-repeat center center/cover;
+	height: 30vh;
+}
+/* main */
+/* icons */
+.icons {
+	padding: 30px;
+}
+.icons h3 {
+	font-weight: 700;
+	margin-bottom: 15px;
+}
+.icons i {
+	background-color: #28a745;
+	color: white;
+	padding: 1rem;
+	border-radius: 50px;
+	margin-bottom: 15px;
+}
+.cases img:hover {
+	opacity: 0.7;
+}
+.team img {
+	border-radius: 50%;
+}
+/* form */
+.callback-form {
+	width: 100%;
+	padding: 20px 0;
+}
+.callback-form label {
+	display: block;
+	margin-bottom: 5px;
+	color: #28a745;
+}
+.callback-form .form-control {
+	margin-bottom: 10px;
+}
+.callback-form input {
+	width: 100%;
+	padding: 4px;
+	height: 40px;
+	border: 2px solid rgba(41, 168, 71, 0.5);
+	border-radius: 4px;
+}
+.callback-form input:focus {
+	outline-color: #28a745;
+}
+.callback-form .btn {
+	padding: 12px 0;
+	margin-top: 20px;
+	background-color: #28a745;
+}
+/* post */
+.post {
+	padding: 50px 30px;
+}
+.post h2 {
+	font-size: 40px;
+	margin-bottom: 20px;
+	padding-bottom: 10px;
+	border-bottom: #ccc;
+}
+.post .meta {
+	margin-bottom: 30px;
+}
+.post img {
+	width: 300px;
+	border-radius: 50%;
+	display: block;
+	margin: 0 auto 30px;
+}
+/* footer */
+.footer {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	/* text-align: center; */
+	font-family: "Rubik", sans-serif;
+	letter-spacing: 0.6px;
+	height: 150px;
+	background-color: #000;
+	color: #fff;
+}
+.footer .social {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 100%;
+	padding: 5px;
+}
+.footer .social a {
+	background-color: #fff;
+	margin-left: 12px;
+	padding: 4.5px 10px;
+	border-radius: 50%;
+	font-size: large;
+}
+
+.footer a:nth-of-type(1) {
+	border: 2px solid #2475d8;
+	background-color: rgba(36, 117, 216, 0.1);
+	color: #2475d8;
+}
+.footer a:nth-of-type(2) {
+	border: 2px solid #e1306c;
+	background-color: rgba(225, 48, 107, 0.1);
+	color: #e1306c;
+}
+.footer a:nth-of-type(3) {
+	border: 2px solid #1da1f2;
+	background-color: rgba(29, 160, 242, 0.1);
+	color: #1da1f2;
+}
+.footer a:nth-of-type(4) {
+	border: 2px solid #2867b2;
+	background-color: rgba(40, 102, 178, 0.1);
+	color: #2867b2;
+}
+.footer p span {
+	color: #28a745;
+}
+
+@media (max-width: 768px) {
+	.navbar {
+		flex-direction: column;
+		height: 120px;
+		padding: 20px;
+	}
+	.navbar a {
+		padding: 10px 10px;
+		margin: 3px;
+	}
+	.flex-items {
+		flex-direction: column;
+	}
+	.flex-columns .column {
+		flex: 100%;
+		max-width: 100%;
+	}
+	.flex-grid .column {
+		flex: 50%;
+		max-width: 100%;
+	}
+	.team img {
+		width: 80%;
+	}
+}
+@media (max-width: 414px) {
+	.hero .content h1 {
+		font-size: 35px;
+	}
+}
+@media (max-width: 350px) {
+	.navbar a {
+		padding: 5px 5px;
+		margin: 1px;
+	}
+}
